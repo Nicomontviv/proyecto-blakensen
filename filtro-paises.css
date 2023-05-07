@@ -1,0 +1,70 @@
+html { 
+    overflow-x: hidden;
+    line-height: 0;
+    width: 100%;
+  } 
+  
+  .body{
+      background-color: black;
+      overflow-x: hidden;
+      width: 100%;
+      margin-right: 0;
+      line-height: 0;
+      padding-left: 0;
+  }
+  .img1-blakensen{
+    display: inline-block;
+      width: 100%;
+      height: auto;
+  }
+  .img1-blakensenWide{
+    width: 100;
+    height: auto;
+    display: none;
+    margin: 0;
+  }
+  .un-titulo{
+    color: #fff;
+    line-height: 1.5;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 6vw;
+    margin: 15%;
+    text-align: center;
+  }
+  .h1{
+    color: #fff;
+    line-height: 1.5;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 5vw;
+    margin: 10%;
+    text-align: center;
+  }
+  .form{
+    color: #fff;
+    margin: 5%;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 4vw;
+  }
+
+  .boton{
+    color: #fff;
+    margin: 10%;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 4vw;
+    margin-left: 40%;
+    width: 35vw;
+    height: 10vw;
+  }
+  .boton-enlace{
+    text-decoration: none;
+    color: #000;
+  }
+
+  @media screen and (min-width: 800px){
+    .img1-blakensenWide{
+        display: inline-block;
+    }
+    .img1-blakensen{
+        display: none;
+    }
+  }

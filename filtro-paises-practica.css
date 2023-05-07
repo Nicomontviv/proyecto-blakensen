@@ -1,0 +1,60 @@
+html { 
+    overflow-x: hidden;
+    line-height: 0;
+    width: 100%;
+  } 
+  
+  .body{
+      background-color: black;
+      overflow-x: hidden;
+      width: 100%;
+      margin-right: 0;
+      line-height: 0;
+      padding-left: 0;
+  }
+  
+  .img1-blakensen{
+    display: inline-block;
+      width: 100%;
+      height: auto;
+  }
+  .img1-blakensenWide{
+    width: 100;
+    height: auto;
+    display: none;
+    margin: 0;
+  }
+
+  .h1{
+    color: #fff;
+    line-height: 1.5;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 5vw;
+    margin: 10%;
+    text-align: center;
+  }
+  .bandera-argentina-boton, .bandera-uruguay-boton{
+    margin: 5%;
+    width: 40vw;
+    height: auto;
+    display: block;
+  }
+  .bandera-argentina-boton{
+    float: left;
+    top: -20px;
+  }
+  .bandera-uruguay-boton{
+    float: right;
+  }
+  .bandera-argentina, .bandera-uruguay{
+    width: 40vw;
+    height: auto;
+  }
+  @media screen and (min-width: 800px){
+    .img1-blakensenWide{
+        display: inline-block;
+    }
+    .img1-blakensen{
+        display: none;
+    }
+  }

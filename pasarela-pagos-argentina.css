@@ -1,0 +1,57 @@
+html { 
+    overflow-x: hidden;
+    line-height: 0;
+    width: 100%;
+  } 
+  
+  .body{
+      background-color: black;
+      overflow-x: hidden;
+      width: 100%;
+      margin-right: 0;
+      line-height: 0;
+      padding-left: 0;
+  }
+  .img1-blakensen{
+    display: inline-block;
+      width: 100%;
+      height: auto;
+  }
+  .img1-blakensenWide{
+    width: 100;
+    height: auto;
+    display: none;
+    margin: 0;
+  }
+  .h1{
+    color: #fff;
+    line-height: 1.5;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 4vw;
+    margin: 10%;
+    text-align: center;
+  }
+  .container-boton-mercadopago{
+    margin-left: 40%;
+  }
+  .cuenta-container{
+    border-radius: 40px;
+    background-color: #232121;
+    margin: 3%;
+  }
+  .h2-cuenta-container{
+    color: #fff;
+    line-height: 1.5;
+    font-family:  'Montserrat', sans-serif ;
+    font-size: 3vw;
+    margin: 10%;
+    padding: 5%;
+  }
+  @media screen and (min-width: 800px){
+    .img1-blakensenWide{
+        display: inline-block;
+    }
+    .img1-blakensen{
+        display: none;
+    }
+  }
