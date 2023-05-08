@@ -47,6 +47,24 @@ html {
     margin: 10%;
     padding: 5%;
   }
+ .boton-transferencia{
+    margin-left: 25%;
+    border-radius: 5px;
+    width: 50vw;
+    margin-bottom: 100px;
+    height: 10vw;
+    background-color: #009ee3;
+    border: none;
+  }
+  .enlace-boton-transferencia{
+    font-size: 3vw;
+    font-family:  'Montserrat', sans-serif ;
+    text-decoration: none;
+    padding: 2% 2% 2% 2%;
+    color: #fff;
+
+    
+  }
   @media screen and (min-width: 800px){
     .img1-blakensenWide{
         display: inline-block;
