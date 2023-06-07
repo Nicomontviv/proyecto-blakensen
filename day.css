@@ -1,0 +1,21 @@
+
+  @keyframes moveBackground {
+    0% {
+      background-position: top left;
+    }
+    50% {
+      background-position: bottom right;
+    }
+    100% {
+      background-position: top left;
+    }
+  }
+  
+  body {
+    background-image: url(fondo-filtro.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: moveBackground 70s infinite;
+  }
+  
