@@ -60,12 +60,30 @@ html {
     text-decoration: none;
     color: #000;
   }
-
+  
+   
   @media screen and (min-width: 800px){
     .img1-blakensenWide{
         display: inline-block;
     }
     .img1-blakensen{
         display: none;
+    }
+    .un-titulo{
+        font-size: 3vw;
+        margin: 5%;   
+    }
+    .h1{
+      font-size: 3vw ;
+    }
+    .form{
+      font-size: 2vw;
+    }
+    .boton{
+      font-size: 2vw;
+      width: 20vw;
+      height: 5vw;
+      margin: 0;
+      margin-left: 60%;
     }
   }
