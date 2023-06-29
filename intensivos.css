@@ -23,3 +23,19 @@
     font-size: 5vw;
     font-family: 'Montserrat', sans-serif;
 }
+@media screen and (min-width: 800px){
+    .btn{
+        display: inline-block;
+        width: 25%;
+        height: 6vw;
+        margin-left: 5%;
+        margin-top: 6%;
+        margin-bottom: 15%
+
+    }
+    
+    .btn-enlace{
+        font-size: 2vw;
+    }
+    
+}
