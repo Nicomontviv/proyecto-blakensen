@@ -14,6 +14,21 @@
     text-align: center;
     margin:10%;
 }
+.h2_pagina_curso{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+    line-height: 1.5;
+    text-align: center;
+    margin:2%;
+}
+.h2-rojo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    line-height: 1.5;
+    text-align: center;
+    margin:2%;
+}
 /*ADAPTACION PANTALLA COMPLETA*/
 @media screen and (min-width: 800px){
     .h2{
@@ -21,6 +36,12 @@
     }
     .h2-negro{
         font-size: 2vw;
+    }
+    .h2_pagina_curso{
+        font-size: 2vw;
+    }
+    .h2-rojo{
+        font-size: 1vw;
     }
 }
 

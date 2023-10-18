@@ -1,0 +1,22 @@
+
+    html { 
+        overflow-x: hidden; 
+        line-height: 0;
+        width: 100%;
+        align-items: center;
+      } 
+      
+    
+      .videocurso_container{
+        width: 100%;
+        height: auto;
+      }
+      .curso_video{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .continuacion{
+        display: none;
+      }
