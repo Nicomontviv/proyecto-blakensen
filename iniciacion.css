@@ -192,7 +192,84 @@ iframe {
     }   
 }
 
+/*------NUEVOS TESTIMONIOS EN IMAGEN----------*/
+/*    nuevo slider*/
+#wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-gap: 200px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: content-box;
+  }
+  
+  .item {
+   
+    background: green;
+  }
 
+  .courses {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .course {
+    background-color: #333333;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150%;
+  
+  }
+  
+  .course img {
+    max-width: 100%;
+    width: 100%;
+  }
 
 
 
