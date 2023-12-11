@@ -11,23 +11,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '670702824567056');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=670702824567056&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="normalize.css" type="text/css">
@@ -37,13 +20,33 @@ src="https://www.facebook.com/tr?id=670702824567056&ev=PageView&noscript=1"
 <body class="body">
     <img src="p1blackensenWide.png" alt="" class="img1-blakensenWide pdf">
     <img src="p1blackensen.png" alt="" class="img1-blakensen pdf">
-    <h1 class="h1">El precio del programa es de <br>$65.000 (pesos argentinos)</h1>
+    <h1 class="h1">El precio del programa es de <br>$175.000 (pesos argentinos)</h1>
     <h1 class="h1">Podés realizar el pago con tarjeta de debito o crédito a traves de MercadoPago (permite cuotas)</h1>
-    <div class="container-boton-mercadopago">
+    <div id="boton1" class="container-boton-mercadopago">
         <script class="boton-mercadopago" src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-        data-preference-id="432811606-0706fbd2-ee19-4334-96c4-582170e68bfa" data-source="button">
+        data-preference-id="432811606-54425d4d-4516-4d77-8b76-da34d55644a2" data-source="button">
         </script>
     </div>
+    <div id="boton2" class="container-boton-mercadopago" style="display: none;">
+        <script class="boton-mercadopago" src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="432811606-c1e47b35-9ffa-4d44-9a2e-200658b8c3f0" data-source="button">
+</script>
+    </div>
+
+    <button id="mostrarInput">Tengo código de descuento</button>
+<div id="codigoInput" style="display: none;">
+  <input class="inputcodigo" type="text" id="codigoDescuento" placeholder="Introduce el código">
+  <button id="verificarCodigo">Verificar Código</button>
+  <p id="mensajeError" style="display: none; color: red;"></p>
+</div>
+<div id="codigoCorrecto" style="display: none;">
+  <h1 class="h1" style="color:green;">¡Código válido! Has obtenido un descuento. Presiona el boton de pago de Mercadopago</p>
+</div>
+<div id="codigoIncorrecto" style="display: none;">
+  <h1 class="h1" style="color: red;">El código ingresado no es válido.</p>
+</div>
+
+
     <h1 class="h1">O tambien podes realizar una transferencia a ésta cuenta:</h1>
     <div class="cuenta-container"><h2 class="h2-cuenta-container">
         Número de CBU: 0720036688000002809340 <br>
@@ -55,6 +58,6 @@ src="https://www.facebook.com/tr?id=670702824567056&ev=PageView&noscript=1"
           src="https://cdn2.woxo.tech/a.js#641a77aa0a1605513ab1f222" 
           async data-usrc>
         </script>
-    <script> fbq('track', 'Visita')</script>
+        <script src="descuentodc.js"></script>
 </body>
 </html>
