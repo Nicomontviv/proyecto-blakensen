@@ -18,15 +18,35 @@
     <title>Pasarela de pagos para Argentina</title>
 </head>
 <body class="body">
+
     <img src="p1blackensenWide.png" alt="" class="img1-blakensenWide pdf">
     <img src="p1blackensen.png" alt="" class="img1-blakensen pdf">
-    <h1 class="h1">El precio del programa es de <br>$85.000 (pesos argentinos)</h1>
+    <h1 class="h1">El precio del programa es de <br>$247.000 (pesos argentinos)</h1>
     <h1 class="h1">Podés realizar el pago con tarjeta de debito o crédito a traves de MercadoPago (permite cuotas)</h1>
-    <div class="container-boton-mercadopago">
-    <script  class="boton-mercadopago" src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-    data-preference-id="432811606-c39d356b-4e35-418c-9af4-4d953d0c1df4" data-source="button">
-    </script>
+    <div id="boton1" class="container-boton-mercadopago">
+        <script class="boton-mercadopago" src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="432811606-5d716d88-954f-475b-a7f8-1dab2ec6f2d3" data-source="button">
+</script>
     </div>
+    <div id="boton2" class="container-boton-mercadopago" style="display: none;">
+        <script class="boton-mercadopago" src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+        data-preference-id="432811606-3b42cf96-fe64-4c4c-8424-1a5ac1d79399" data-source="button">
+        </script>
+    </div>
+
+    <button id="mostrarInput">Tengo código de descuento</button>
+<div id="codigoInput" style="display: none;">
+  <input class="inputcodigo" type="text" id="codigoDescuento" placeholder="Introduce el código">
+  <button id="verificarCodigo">Verificar Código</button>
+  <p id="mensajeError" style="display: none; color: red;"></p>
+</div>
+<div id="codigoCorrecto" style="display: none;">
+  <h1 class="h1" style="color:green;">¡Código válido! Has obtenido un descuento. Presiona el boton de pago de Mercadopago</p>
+</div>
+<div id="codigoIncorrecto" style="display: none;">
+  <h1 class="h1" style="color: red;">El código ingresado no es válido.</p>
+</div>
+
     <h1 class="h1">O tambien podes realizar una transferencia a ésta cuenta:</h1>
     <div class="cuenta-container"><h2 class="h2-cuenta-container">
         Número de CBU: 0720036688000002809340 <br>
@@ -39,4 +59,5 @@
           async data-usrc>
         </script>
 </body>
+<script src="descuentodc.js"></script>
 </html>
