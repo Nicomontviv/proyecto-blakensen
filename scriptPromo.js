@@ -30,6 +30,12 @@ document.getElementById('countryForm').addEventListener('submit', function(event
         } else {
             document.getElementById('otherSection').classList.remove('hidden');
             document.getElementById('wsp-comprobante').classList.remove('hidden');
+            // Condición que deseas evaluar
+let condition = true; // Esto puede ser cualquier expresión que resulte en un valor booleano
+
+// Redireccionar basado en la condición
+condition ? window.location.href = "https://goe.run/6697d2ba37a93" : console.log("La condición no se cumplió.");
+
         }
     }, 1000); // Match the timeout duration with the CSS animation duration
 });
